@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('yeomanMeanstackApp', ['btford.socket-io'])
+angular.module('yeomanMeanstackApp', ['btford.socket-io', 'ui.bootstrap'])
     .config(function($routeProvider) {
         $routeProvider
             .when('/', {

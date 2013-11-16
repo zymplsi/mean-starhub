@@ -1,15 +1,11 @@
 <div class="hero-unit">
-  <ul>
-<!--    <li ng-repeat="message in messages">{{message.data}} ({{message.caller}})</li> -->
-    <div class="panel panel-primary" ng-repeat="message in messages">
-      <div class="panel-heading">
-        <h3 class="panel-title">From: {{message.caller}}</h3>
-        <h3 class="panel-title">Time: {{message.time}}</h3> 
+  <carousel interval="myInterval">
+    <slide ng-repeat="message in messages" active="slide.active">
+      <img src="http://placekitten.com/200/200" style="margin:auto;">
+      <div class="carousel-caption">
+        <p>{{message.data}}</p>
       </div>
-      <div class="panel-body">
-        Message: {{message.data}}
-      </div>
-    </div>
-  </ul>
+    </slide>
+  </carousel>
 
 </div>
