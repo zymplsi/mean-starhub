@@ -13,7 +13,7 @@ angular.module('yeomanMeanstackApp')
             console.log(data);
             arr.push(data);
         });
-        $scope.awesomeThings = arr;
+        $scope.messages = arr;
 
 
     });
