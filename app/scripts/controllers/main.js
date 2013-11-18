@@ -5,9 +5,11 @@ angular.module('yeomanMeanstackApp')
     var arr = [];
     socket.on('all', function(data) {
         console.log(data);
-        arr.push(data);
+        //arr.push(data);
+        arr.unshift(data);
+        arry[0].active = true;
     });
     $scope.messages = arr;
 
-    $scope.myInterval = 5000;
+    $scope.myInterval = 4000;
   });
