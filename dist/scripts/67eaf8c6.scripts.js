@@ -1,1 +1,0 @@
-"use strict";angular.module("yeomanMeanstackApp",["btford.socket-io"]).config(["$routeProvider",function(a){a.when("/",{templateUrl:"views/main.html",controller:"MainCtrl"}).otherwise({redirectTo:"/"})}]),angular.module("yeomanMeanstackApp").controller("MainCtrl",["$scope","socket",function(a,b){var c=[];b.on("all",function(a){console.log(a),c.push(a)}),a.awesomeThings=c}]);

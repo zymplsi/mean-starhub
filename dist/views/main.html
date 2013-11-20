@@ -1,6 +1,11 @@
 <div class="hero-unit">
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
+  <carousel interval="myInterval">
+    <slide ng-repeat="message in messages" active="slide.active">
+      <img src="http://host4.images.cdn.fotopedia.com/xCxNAZV6M3w-Oc0PySS9bPU-medium.jpg" style="margin:auto">
+      <div class="carousel-caption">
+        <p>{{message.data}}</p>
+      </div>
+    </slide>
+  </carousel>
 
 </div>
